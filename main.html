@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <!--북마크 저장하면 이름이 DawnTech로 저장됨-->
+    <title>DawnTech</title>
+    <!-- author 저자 혁진-->
+    <meta nae="author" content="Hyeok Jin">
+    <!-- 아이콘도 웹사이트 절보에 해당하기 때문에 메타랑 묶어서 선언   , 브라우저 주소창 위에 아이콘 모양 -->
+    <link rel="icon"   type="image/png"   href="image/dawntech2.png">
+
+    <script src="https://kit.fontawesome.com/3578bfcb19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- defer 이용하는 것은 html 파일이 parsing하는 되는 동안 자바스크립트 파일은 동시에 다운로드 받음
+    html이 parsing하는 중 defer에 의해 main.js를 다운받고 html parsing이 완료가 된 다음에 자바 스크랩트 파일을 실행하기 때문 -->
+    <script src="main.js" defer></script>
+</head>
+
+
+<body>
+
+
+    <!-- Navbar   -->
+    <nav id="navbar">
+        <div class="navbar__log">
+            <!--   <i class="fab fa-diaspora"></i>   -->
+            <a href="#">Dawntech</a>
+        </div>
+
+        <!--    ul.navbar__menu>li.navbar__menu__item*6   ul 태그 안에 navbar__menu클래스 안에 navbar__menu__item이라는 이름의 클래스를 li태크로 6개 만들어라 -->
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link=#home>Home</li>
+            <li class="navbar__menu__item" data-link=#about>About</li>
+            <li class="navbar__menu__item" data-link=#skills>Skills</li>
+            <li class="navbar__menu__item" data-link=#work>Mywork</li>
+            <li class="navbar__menu__item" data-link=#testimonials>testimonial</li>
+            <li class="navbar__menu__item" data-link=#Contact>Contact</li>
+        </ul>
+
+        <!-- Toggle button-->
+
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-align-justify"></i>
+        </button>
+    </nav>
+
+
+    <!-- Home   -->
+    <section id="home">
+        <div class="home__container">
+            <img src="image/dawntech2.png" alt="Dawntech" class="home-avater">
+
+            <h1 class="home__title">Hardware & Software </h1>
+            <h2 class="home__description"> Dawntech has been developing Hardware and Software.</h2>
+            <button class="home_contact">Home_Contact</button>
+        </div>
+    </section>
+
+
+    <!-- About   -->
+    <section id="about" class="section section__container">
+
+        <h1>About Dawntech</h1>
+
+        <p>
+            Dawntech had been founded on November 25, 2010.
+            It is a company that designs circuits and program firmware according to the needs of external companies or
+            customers.
+            Furthermore, Android mobile, frontend and backend are also being developed to secure more marketability.
+        </p>
+
+        <div class="about__majors">
+            <div class="major">
+
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+
+                <div class="major__title">Front-end</div>
+
+                <div class="major__description">
+
+                </div>
+            </div>
+
+            <div class="major">
+
+                <div class="major__icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+
+                <div class="major__title">Mobile</div>
+
+                <div class="major__description">
+
+                </div>
+            </div>
+
+            <div class="major">
+
+                <div class="major__icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+
+                <div class="major__title">Back-end</div>
+
+                <div class="major__description">
+
+                </div>
+            </div>
+
+            <div class="major">
+
+                <div class="major__icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+
+                <div class="major__title">Circuit design</div>
+
+                <div class="major__description">
+
+                </div>
+            </div>
+
+            <div class="major">
+
+                <div class="major__icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+
+                <div class="major__title">Firmware</div>
+
+                <div class="major__description">
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills   -->
+    <section id="skills" class="section">
+
+        <div class="section__container">
+            <h1>Proficiency Level</h1>
+            <h2>Proficiency & Attributes</h2>
+
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Proficiency</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="skill__Bar">
+                            <div class="skill__value" style="width: 10%"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="skill__Bar">
+                            <div class="skill__value" style="width: 10%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Mobile</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill__Bar">
+                            <div class="skill__value" style="width: 30%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Window UI (C#)</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__Bar">
+                            <div class="skill__value" style="width: 60%"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Circuit design</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill__Bar">
+                            <div class="skill__value" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Firmware</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__Bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio code</span></li>
+                            <li><span>Android Studio code</span></li>
+                            <li><span>MPLAB X IDE </span></li>
+                            <li><span>Source Insite</span></li>
+                            <li><span>OrCad</span></li>
+                            <li><span>Visual Studio</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <!-- 잘하는 것-->
+                        <h3 class="skillset__title">etc</h3>
+                        <ul class="etc__list">
+                            <li class="span">Firmware</li>
+                            <li class="span">Circuit design</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Work   -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>Work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="category__Btn selected" data-filter="*">
+                    All <span class="category__count">21</span></button>
+                <button class="category__Btn" data-filter="Front-end">
+                    Front-end<span class="category__count">1</span></button>
+                <button class="category__Btn" data-filter="Back-end">
+                    Back-end<span class="category__count">0</span></button>
+                <button class="category__Btn" data-filter="Circuit design">
+                    Circuit design<span class="category__count">10</span></button>
+                <button class="category__Btn" data-filter="Firmware">
+                    Firmware <span class="category__count">10</span></button>
+            </div>
+
+            <div class="work__projects">
+                <a href="" class="project" target="" data-type="Front-end">
+                    <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                    <div class="project_description">
+                        <h3> what the..</h3>
+                        <span> what??</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="" data-type="Front-end">
+                    <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                    <div class="project_description">
+                        <h3> what the..</h3>
+                        <span> what??</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="" data-type="Back-end">
+                    <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                    <div class="project_description">
+                        <h3> what the..</h3>
+                        <span> what??</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="" data-type="Circuit design">
+                    <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                    <div class="project_description">
+                        <h3> what the..</h3>
+                        <span> what??</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="" data-type="Circuit design">
+                    <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                    <div class="project_description">
+                        <h3> what the..</h3>
+                        <span> what??</span>
+                    </div>
+                </a>
+
+                <a href="" class="project" target="" data-type="Circuit design">
+                    <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                    <div class="project_description">
+                        <h3> what the..</h3>
+                        <span> what??</span>
+                    </div>
+                    <a href="" class="project" target="" data-type="Firmware">
+                        <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                        <div class="project_description">
+                            <h3> what the..</h3>
+                            <span> what??</span>
+                        </div>
+                    </a>
+
+                    <a href="" class="project" target="" data-type="Firmware">
+                        <img src="image/dog.PNG" alt="dog" class="project__img">
+
+                        <div class="project_description">
+                            <h3> what the..</h3>
+                            <span> what??</span>
+                        </div>
+                    </a>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Testimonials   -->
+    <section id="testimonials" class="section">
+
+        <div class="seection__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="tesimonials">
+
+                <div class="testmonial">
+                    <img src="image/chip_circuit_ic.png" 
+                    alt="Microchip" 
+                    class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            rarararararar arararar arar rarrara rarara rara rarararararar arararar arar rarrara rarara
+                            rara
+                            rarararararar arararar arar rarrara rarara rara rarararararar arararar arar rarrara rarara
+                            rara
+                        </p>
+
+                        <p class="name"><a href="">Dawntech</a></p>
+                    </div>
+                </div>
+
+                <div class="testmonial">
+
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            rarararararar arararar arar rarrara rarara rara rarararararar arararar arar rarrara rarara
+                            rara
+                            rarararararar arararar arar rarrara rarara rara rarararararar arararar arar rarrara rarara
+                            rara
+                        </p>
+
+                        <p class="name"><a href="">Dawntech</a></p>
+                    </div>
+
+                    <img src="image/chip_circuit_ic.png" alt="Microchip" class="testimonial__avatar">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- Contact   -->
+    <section id="Contact" class="section">
+        <h1 class="Contact_title">Let's talk</h1>
+        <h2 class="Contact_email">dawntec@nate.com</h2>
+        <div class="Contact_link">
+            <a href="" target="_black">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="#" target="_black">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+        </div>
+
+
+
+        <p class="Contact_right">경기도 화성시 기산로 86 도운테크 <br> 2020 Dawntech</p>
+
+    </section>
+
+
+    <!-- Arrow up-->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+</body>
+
+
+</html>
